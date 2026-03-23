@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . "/header.php";
 require_once __DIR__ . "/data.php";
+
+//Review the index code if you want or the script.js code, whichever is more fun
+
 ?>
 
 <main>
@@ -13,8 +16,8 @@ require_once __DIR__ . "/data.php";
             <?php foreach ($movies as $movie) { ?>
                 <div class="movie-container">
                     <a href="movie page.php">
-                        <img class="movieroll" src="./components/single-movie-frame.svg">
-                        <img class="poster" src="<?= $movie['poster'] ?>">
+                        <img class="movieroll" src="./components/single-movie-frame.svg" alt="Old school movie roll framing each movie">
+                        <img class="poster" src="<?= $movie['poster'] ?>" alt="<?= strtolower($movie['title']) ?>">
                         <div class="hidden-info">
                             <p class="hover-info"><?= $movie['hover-info'] ?></p>
                             <p class="read-more">Read more</p>
@@ -37,8 +40,8 @@ require_once __DIR__ . "/data.php";
             <?php foreach ($retroRuns as $retroRun) { ?>
                 <div class="movie-container">
                     <a href="movie page.php">
-                        <img class="movieroll" src="./components/single-movie-frame.svg">
-                        <img class="poster" src="<?= $retroRun['poster'] ?>">
+                        <img class="movieroll" src="./components/single-movie-frame.svg" alt="Old school movie roll framing each movie">
+                        <img class="poster" src="<?= $retroRun['poster'] ?>" alt="<?= strtolower($retroRun['title']) ?>">
                         <div class="hidden-info">
                             <p class="hover-info"><?= $retroRun['hover-info'] ?></p>
                             <p class="read-more">Read more</p>
@@ -59,8 +62,8 @@ require_once __DIR__ . "/data.php";
             <?php foreach ($upcoming as $new) { ?>
                 <div class="movie-container">
                     <a href="movie page.php">
-                        <img class="movieroll" src="./components/single-movie-frame.svg">
-                        <img class="poster" src="<?= $new['poster'] ?>">
+                        <img class="movieroll" src="./components/single-movie-frame.svg" alt="Old school movie roll framing each movie">
+                        <img class="poster" src="<?= $new['poster'] ?>" alt="<?= strtolower($new['title']) ?>">
                         <div class="hidden-info">
                             <p class="hover-info"><?= $new['hover-info'] ?></p>
                             <p class="read-more">Read more</p>
