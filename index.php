@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . "/header.php";
 require_once __DIR__ . "/data.php";
+
+//Review the index code if you want or the script.js code, whichever is more fun
+
 ?>
 
 <main>

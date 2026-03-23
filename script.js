@@ -1,3 +1,5 @@
+//Or review this ;)
+
 // Hamburger menu
 
 var burgerMenu = document.getElementById('burger-menu');
